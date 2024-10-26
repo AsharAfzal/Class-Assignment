@@ -1,25 +1,11 @@
-// import Navbar from "@/components/Navbar"; 
-
+import Navbar from "@/components/Navbar"; 
 import Link from "next/link";
 import React from "react";
 
- 
-// function Country(){
-//     return(
-//         <>
-//         <Navbar />
-//         <h1>
-//         Country
-//         </h1>
-//     </>
-//     ) 
-// }
-
-// export default Country
-
-
 export default function Country() {
     return  ( <div>
+
+        <Navbar/>
     <h1>Countries :-
     <ul>
     <li><Link href="/country/pakistan">Pakistan</Link></li> <br />
