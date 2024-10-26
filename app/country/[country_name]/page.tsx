@@ -1,8 +1,9 @@
 import React from "react";
-
+import Navbar from "@/components/Navbar";
 
 
 export default function country_name({params}:{params:{country_name:string,population:number|string,capital_city:string}}){
+
     const countries ={
         pakistan : {
             name:"Pakistan",
@@ -62,7 +63,10 @@ export default function country_name({params}:{params:{country_name:string,popul
     
     
     return(
+
+        
         <div>
+            <Navbar/>
         <h1>Country details :-</h1>
         <p>Country name : {params.country_name}</p>
         <p>Population : <span style={{color:"red"}}>{params.population} </span> </p>
